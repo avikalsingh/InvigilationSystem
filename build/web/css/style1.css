@@ -1,0 +1,266 @@
+body
+{
+    background-image: url('../images/bg.jpg');
+    font-family: "Ubuntu", sans-serif;
+}
+
+#outer
+{
+    min-height: 1200px;
+    height: auto;
+    width: 1000px;
+    margin:0 auto;
+}
+
+#header
+{
+    width: 1000px;
+    height: 150px;
+}
+
+#logo
+{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    float: left;
+    transition: transform .2s; /* Animation */
+}
+
+#logo:hover
+{
+    transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#title
+{
+    width: 850px;
+    height: 150px;
+    background-image: linear-gradient(to bottom right, #330066, #009999);
+    float: right;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 75px;
+    line-height: 150px;
+}
+
+#menu
+{
+    width: 1000px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+}
+
+#menu ul
+{
+    list-style: none;
+}
+
+#menu ul li
+{
+    display: inline;
+    padding: 15px;
+    transition: width 2s, background-color 2s, transform 2s;
+}
+
+#menu ul li a
+{
+    text-decoration: none;
+    color: #666666;
+    font-size: 20px;
+    transition: 0.5s;
+    transition-property: font-size;
+    transition-duration: 1s;
+}
+
+#menu ul li a:hover
+{
+    font-size: 30px;
+    color: #00cccc;
+    border-bottom: 1.5px solid #00cccc;
+    transition: 0.5s;
+}
+
+#active a 
+{
+    color: #00cccc !important;
+}
+
+#slider
+{
+    width: 1000px;
+    height: 250px;
+    background-color: lightgray;
+    margin-top: 5px;
+}
+
+#slide:hover
+{
+    transition: 1s;
+    filter: brightness(60%);
+}
+
+#main
+{
+    width: 1000px;
+    min-height: 600px;
+    height: auto;
+    margin-top: 5px;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #003333;
+    background: #ccffff;
+}
+
+::selection {
+    color: #003333;
+    background: #ccffff;
+}
+
+h1 {
+    text-align: center;
+    background: -webkit-linear-gradient(#330066, #009999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#left
+{
+    width: 300px;
+    height: auto;
+    min-height: 600px;
+    float: left;
+    background-image: linear-gradient(to bottom right, #330066, #00cccc);
+}
+
+#right
+{
+    width: 700px;
+    height: auto;
+    min-height: 600px;
+    float: right;
+    background-color: white;
+}
+
+#para:hover
+{
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove 
+{
+  from {top: 0px;}
+  to {top: 0px; background-color: #003333; color: beige;}
+}
+
+#input-box {
+  border: 1.5px solid #ccc;
+  border-radius: 15px;
+  padding: 6px;
+  outline: none;
+  color: #009999;
+}
+
+#input-box:focus {
+  border-color: #009999;
+}
+
+#footer
+{
+    width: 1000px;
+    height: 130px;
+    margin-top: 5px;
+}
+
+#lfooter
+{
+    float: left;
+    width: 500px;
+    height: 130px;
+    font-size: 30px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, black, #333333);
+    line-height: 130px;
+    color: whitesmoke;
+}
+
+#rfooter
+{
+    float: right;
+    width: 500px;
+    height: 130px;
+    font-size: 30px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, blue, #99ffff);
+    line-height: 130px;
+    color: whitesmoke;
+}
+
+.navbar{
+              
+               overflow: hidden;
+               background-color: #777;
+               font-family: Arial, Helvetica, sans-serif;
+                      }
+
+         .navbar a {
+             float: left;
+             font-size: 16px;
+             color: white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+                           }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+                           }
+
+        .dropdown .dropbtn {
+            
+            float: left;
+            cursor: pointer;
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 1;
+                                            }
+
+        .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+            background-color: black;
+                                                        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+                                            }
+
+         .dropdown-content a {
+              float: none;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+                                            }
+
+        .dropdown-content a:hover {
+                background-color: #ddd;
+                                                        }
+
+        .show {
+                display: block;
+                    }
